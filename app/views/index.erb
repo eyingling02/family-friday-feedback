@@ -40,7 +40,7 @@
     <body>
         <div id="greeting">
             <div class="top-greeting">
-                <h2>How was your</h2>
+                <h2>Hi <%= @first_member.name %>! How was your</h2>
             </div>
             <div id="bottom-greeting">
                 <h1>Family Friday?</h1>
@@ -54,19 +54,19 @@
           <table>
               <tr>
                   <td class="form-table">
-                    <form class="response-form" action="/response" method="post">
-                      <input type="submit" name="No" value="No">
-                    </form>
+                      <a href="www.family-friday.com?name=<%=@first_member.name%>&response=no">
+                        <input type="submit" name="No" value="No">
+                      </a>
                   </td>
                   <td class="form-table">
-                    <form class="response-form" action="/response" method="post">
+                    <a href="#">
                       <input type="submit" name="OK" value="It was OK">
-                    </form>
+                    </a>
                   </td>
                   <td class="form-table">
-                    <form class="response-form" action="/response" method="post">
+                    <a href="#">
                       <input type="submit" name="loved-it" value="Loved It!">
-                    </form>
+                    </a>
                   </td>
               </tr>
           </table>

@@ -18,6 +18,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'json'
+gem 'pry'
 
 group :test do
   gem 'shoulda-matchers'
