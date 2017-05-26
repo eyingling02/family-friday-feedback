@@ -1,5 +1,13 @@
 h1 {
   font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+
+body {
+  margin: auto;
+  width: 85%;
+  height: auto;
+  padding: 10px;
 }
 
 .social-media-icon{
