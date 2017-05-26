@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!--  jquery/ajax CDN  -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!--  font-awesome CDN  -->
-  <script src="https://use.fontawesome.com/ea50665efc.js"></script>
+    <head>
+        <title>Family Friday Feedback</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--  jquery/ajax CDN  -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--  font-awesome CDN  -->
+        <script src="https://use.fontawesome.com/ea50665efc.js"></script>
 
-<!--  CSS stylesheets  -->
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/application.css">
+        <!--  CSS stylesheets  -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/application.css">
 
-<!--  js files  -->
-  <script src="/js/application.js"></script>
+        <!--  js files  -->
+        <script src="/js/application.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-</head>
-<body>
-  <div id="header-div">
-    <!-- <h2>Hi  interpolate name here </h2>
-    <h2>how was your</h2> -->
-    <h1>Family Friday</h1>
-  </div>
-</body>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+        <!--  google analytics  -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-99971104-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </head>
+    <body>
+        <div id="greeting">
+            <div class="top-greeting">
+                <h2>How was your</h2>
+            </div>
+            <div id="bottom-greeting">
+                <h1>Family Friday?</h1>
+            </div>
+        </div>
+        <div id="members-cell">
+            <h3>Did you enjoy your meal with</h3>
+            <!-- Interpolate names here -->
+        </div>
+        <div class="form-div">
+          <table>
+              <tr>
+                  <td class="form-table">
+                    <form class="" action="/no" method="post">
+                      <input type="submit" name="No" value="No">
+                    </form>
+                  </td>
+                  <td class="form-table">
+                    <form class="" action="/ok" method="post">
+                      <input type="submit" name="OK" value="It was OK">
+                    </form>
+                  </td>
+                  <td class="form-table">
+                    <form class="" action="/loved-it" method="post">
+                      <input type="submit" name="loved-it" value="Loved It!">
+                    </form>
+                  </td>
+              </tr>
+          </table>
+        </div>
+        <div class="center">
+            <table>
+                <tr>
+                    <td class="social-media-icon">
+                        <a href="https://twitter.com/ApartmentList?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <img src="/images/twitter_resized.png" alt="Twitter">
+                        </a>
+                    </td>
+                    <td class="social-media-icon">
+                        <a href="https://www.facebook.com/ApartmentList/">
+                            <img src="/images/fb.png" alt="Facebook">
+                        </a>
+                    </td>
+                    <td class="social-media-icon">
+                        <a href="https://www.instagram.com/apartmentlist/">
+                            <img src="/images/insta.png" alt="Instagram">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="logo-cell">
+            <a href="https://www.apartmentlist.com/">
+                <img src="/images/apartment-list-logo.png" alt="Apartment List Logo">
+            </a>
+        </div>
+    </body>
+</html>
