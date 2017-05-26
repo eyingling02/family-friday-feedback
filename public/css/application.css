@@ -1,3 +1,15 @@
 h1 {
   font-family: 'Lobster', cursive;
 }
+
+.social-media-icon{
+  margin: auto;
+}
+.center {
+  align-content: center;
+}
+
+table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
